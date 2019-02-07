@@ -388,37 +388,37 @@ body {
 		height : 350px;
 	}
 
-	services {
+	service {
 		display   : block;
 		width     : 100%;
 		margin-top: 120px;
 	}
 
-		services > service-header {
+		service > service-header {
 			display         : block;
 			width           : 100%;
 			background-color: white;
 		}
 
-			services > service-header > div {
+			service > service-header > div {
 				width: 100%;
 			}
 
-			services > service-header > div:first-of-type {
+			service > service-header > div:first-of-type {
 				display        : flex;
 				flex-flow      : row wrap;
 				justify-content: space-between;
 			}
 
-				services > service-header > div:first-of-type > figure {
+				service > service-header > div:first-of-type > figure {
 					width: calc(33.3333% - 5px);
 				}
 
-					services > service-header > div:first-of-type > figure > img {
+					service > service-header > div:first-of-type > figure > img {
 						width: 100%;
 					}
 
-			services > service-header > div:last-of-type {
+			service > service-header > div:last-of-type {
 				padding        : 120px;
 				display        : flex;
 				flex-flow      : row wrap;
@@ -426,11 +426,11 @@ body {
 				align-items    : center;
 			}
 
-				services > service-header > div:last-of-type > div {
+				service > service-header > div:last-of-type > div {
 					width: calc(50% - 20px);
 				}
 
-					services > service-header > div:last-of-type > div > h1 {
+					service > service-header > div:last-of-type > div > h1 {
 						white-space   : pre-line;
 						font-weight   : 100;
 						color         : #071555;
@@ -438,35 +438,35 @@ body {
 						text-transform: uppercase;
 					}
 
-						services > service-header > div:last-of-type > div > h1 > strong {
+						service > service-header > div:last-of-type > div > h1 > strong {
 							font-weight: 800;
 							font-size  : 1.25em;
 						}
 
-					services > service-header > div:last-of-type > div > ul {
+					service > service-header > div:last-of-type > div > ul {
 						margin-bottom: 40px;
 					}
 
-						services > service-header > div:last-of-type > div > ul > li {
+						service > service-header > div:last-of-type > div > ul > li {
 							display      : block;
 							margin-bottom: 10px;
 						}
 
-						services > service-header > div:last-of-type > div > ul > li:last-of-type {
+						service > service-header > div:last-of-type > div > ul > li:last-of-type {
 							margin-bottom: 0px;
 						}
 
-					services > service-header > div:last-of-type > div > p {
+					service > service-header > div:last-of-type > div > p {
 						text-align   : justify;
 						margin-bottom: 10px;
 						color        : black;
 					}
 
-					services > service-header > div:last-of-type > div > p:last-of-type {
+					service > service-header > div:last-of-type > div > p:last-of-type {
 						margin-bottom: 0px;
 					}
 
-					services > service-header > div:last-of-type > div > img {
+					service > service-header > div:last-of-type > div > img {
 						width: 100%;
 					}
 
@@ -543,6 +543,23 @@ body {
 		width          : 100%;
 		padding        : 120px 0px;
 	}
+
+		break > .single {
+			width          : 100%;
+			display        : flex;
+			align-items    : center;
+			justify-content: center;
+			flex-direction : column;
+		}
+
+			break > .single > h3 {
+				margin-bottom : 20px;
+				text-align    : center;
+				color         : white;
+				text-transform: uppercase;
+				font-weight   : 100;
+				font-size     : 2.5em;
+			}
 
 		break > div {
 			width  : 50%;
@@ -693,6 +710,156 @@ body {
 					#contacto > div > form > div > button:hover {
 						background-color: black;
 						color           : white;
+					}
+
+	project {
+		display   : block;
+		width     : 100%;
+		margin-top: 120px;
+	}
+
+		project > project-header {
+			display: block;
+			width  : 100%;
+			padding: 80px 120px;
+		}
+
+			project > project-header > h1 {
+				display       : block;
+				width         : 100%;
+				font-weight   : 100;
+				font-size     : 2.5em;
+				text-transform: uppercase;
+				color         : white;
+			}
+
+				project > project-header > h1  > strong {
+					display: block;
+				}
+
+		project > section {
+			width          : 100%;
+			padding        : 80px 120px;
+			display        : flex;
+			align-items    : center;
+			justify-content: center;
+			flex-direction : column;
+		}
+
+			project > section > sub {
+				display      : inline-block;
+				font-size    : 1em;
+				font-weight  : 300;
+				margin-bottom: 40px;
+			}
+
+			project > section > grid {
+				display: block;
+				width  : 100%;
+			}
+
+				project > section > grid > row {
+					width          : 100%;
+					display        : flex;
+					flex-flow      : row wrap;
+					justify-content: space-between;
+					margin-bottom  : 5px;
+				}
+
+				project > section > grid > row:last-of-type {
+					margin-bottom: 0px;
+				}
+
+					project > section > grid > row > .single {
+						width: 100%;
+					}
+
+					project > section > grid > row > .double {
+						width: calc(50% - 2.5px);
+					}
+
+					project > section > grid > row > .triple {
+						width: calc(33.33333333333333% - 5px);
+					}
+
+						project > section > grid > row > div > img {
+							width: 100%;
+						}
+
+	project > projects {
+		display        : flex;
+		align-items    : center;
+		justify-content: center;
+		flex-direction : column;
+		width          : 100%;
+		padding        : 80px 120px;
+	}
+
+		project > projects > h2 {
+			display       : inline-block;
+			margin-bottom : 40px;
+			text-transform: uppercase;
+			font-weight   : 100;
+			color         : #071555;
+			font-size     : 2em;
+		}
+
+			project > projects > h2 > strong {
+				font-weight: 800;
+			}
+
+		project > projects > div {
+			width          : 100%;
+			display        : flex;
+			flex-flow      : row wrap;
+			justify-content: space-between;
+		}
+
+			project > projects > div > article {
+				width          : calc(33.33333333333333% - 20px);
+				display        : flex;
+				flex-flow      : row wrap;
+				justify-content: space-between;
+				align-items    : center;
+			}
+
+				project > projects > div > article > img {
+					width: calc(30% - 10px);
+				}
+
+				project > projects > div > article > div {
+					width: calc(70% - 10px);
+				}
+
+					project > projects > div > article > div > h1 {
+						font-size     : 1.5em;
+						font-weight   : 300;
+						text-transform: uppercase;
+						color         : #071555;
+					}
+
+					project > projects > div > article > div > sub {
+						display      : block;
+						font-size    : 1em;
+						font-weight  : 300;
+						color        : #071555;
+						margin-bottom: 20px;
+					}
+
+					project > projects > div > article > div > p {
+						text-align   : justify;
+						margin-bottom: 20px;
+					}
+
+					project > projects > div > article > div > a {
+						padding         : 10px 20px;
+						background-color: #071555;
+						color           : white;
+						font-weight     : 300;
+					}
+
+					project > projects > div > article > div > a:hover {
+						background-color: black;
 					}
 
 	body > footer {

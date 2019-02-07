@@ -1,7 +1,7 @@
 <?php include 'header.html'; ?>
 	<?php include 'nav.html'; ?>
 	<!-- Cabecera -->
-	<services>
+	<service>
 		<service-header>
 			<div>
 				<figure><img src="assets/imagenes/cabecera/figura-1.jpg" alt="#"></figure>
@@ -58,5 +58,5 @@
 				<a href="#">Contáctanos</a>
 			</div>
 		</break>
-	</services>
+	</service>
 <?php include 'footer.html'; ?>
