@@ -388,86 +388,87 @@ body {
 		height : 350px;
 	}
 
-services {
-	display   : block;
-	width     : 100%;
-	margin-top: 120px;
-}
-
-	services > header {
-		width           : 100%;
-		background-color: white;
+	services {
+		display   : block;
+		width     : 100%;
+		margin-top: 120px;
 	}
 
-		services > header > div {
-			width: 100%;
+		services > service-header {
+			display         : block;
+			width           : 100%;
+			background-color: white;
 		}
 
-		services > header > div:first-of-type {
-			display        : flex;
-			flex-flow      : row wrap;
-			justify-content: space-between;
-		}
-
-			services > header > div:first-of-type > figure {
-				width: calc(33.3333% - 5px);
+			services > service-header > div {
+				width: 100%;
 			}
 
-				services > header > div:first-of-type > figure > img {
-					width: 100%;
-				}
-
-		services > header > div:last-of-type {
-			padding        : 120px;
-			display        : flex;
-			flex-flow      : row wrap;
-			justify-content: space-between;
-			align-items    : center;
-		}
-
-			services > header > div:last-of-type > div {
-				width: calc(50% - 20px);
+			services > service-header > div:first-of-type {
+				display        : flex;
+				flex-flow      : row wrap;
+				justify-content: space-between;
 			}
 
-				services > header > div:last-of-type > div > h1 {
-					white-space   : pre-line;
-					font-weight   : 100;
-					color         : #071555;
-					margin-bottom : 40px;
-					text-transform: uppercase;
+				services > service-header > div:first-of-type > figure {
+					width: calc(33.3333% - 5px);
 				}
 
-					services > header > div:last-of-type > div > h1 > strong {
-						font-weight: 800;
-						font-size  : 1.25em;
+					services > service-header > div:first-of-type > figure > img {
+						width: 100%;
 					}
 
-				services > header > div:last-of-type > div > ul {
-					margin-bottom: 40px;
+			services > service-header > div:last-of-type {
+				padding        : 120px;
+				display        : flex;
+				flex-flow      : row wrap;
+				justify-content: space-between;
+				align-items    : center;
+			}
+
+				services > service-header > div:last-of-type > div {
+					width: calc(50% - 20px);
 				}
 
-					services > header > div:last-of-type > div > ul > li {
-						display      : block;
+					services > service-header > div:last-of-type > div > h1 {
+						white-space   : pre-line;
+						font-weight   : 100;
+						color         : #071555;
+						margin-bottom : 40px;
+						text-transform: uppercase;
+					}
+
+						services > service-header > div:last-of-type > div > h1 > strong {
+							font-weight: 800;
+							font-size  : 1.25em;
+						}
+
+					services > service-header > div:last-of-type > div > ul {
+						margin-bottom: 40px;
+					}
+
+						services > service-header > div:last-of-type > div > ul > li {
+							display      : block;
+							margin-bottom: 10px;
+						}
+
+						services > service-header > div:last-of-type > div > ul > li:last-of-type {
+							margin-bottom: 0px;
+						}
+
+					services > service-header > div:last-of-type > div > p {
+						text-align   : justify;
 						margin-bottom: 10px;
+						color        : black;
 					}
 
-					services > header > div:last-of-type > div > ul > li:last-of-type {
+					services > service-header > div:last-of-type > div > p:last-of-type {
 						margin-bottom: 0px;
 					}
 
-				services > header > div:last-of-type > div > p {
-					text-align   : justify;
-					margin-bottom: 10px;
-					color        : black;
-				}
-
-				services > header > div:last-of-type > div > p:last-of-type {
-					margin-bottom: 0px;
-				}
-
-				services > header > div:last-of-type > div > img {
-					width: 100%;
-				}
+					services > service-header > div:last-of-type > div > img {
+						width: 100%;
+					}
 
 	#servicios {
 		width           : 100%;

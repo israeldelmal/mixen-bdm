@@ -2,7 +2,7 @@
 	<?php include 'nav.html'; ?>
 	<!-- Cabecera -->
 	<services>
-		<header id="nosotros">
+		<service-header>
 			<div>
 				<figure><img src="assets/imagenes/cabecera/figura-1.jpg" alt="#"></figure>
 				<figure><img src="assets/imagenes/cabecera/figura-2.jpg" alt="#"></figure>
@@ -26,7 +26,7 @@
 					<img src="assets/imagenes/cabecera/figura-4.jpg" alt="#">
 				</div>
 			</div>
-		</header>
+		</service-header>
 		<!-- Servicios -->
 		<section id="servicios" data-parallax="scroll" data-image-src="assets/imagenes/servicios/fondo.jpg">
 			<h1>Conoce más de <strong>nuestros servicios</strong></h1>
