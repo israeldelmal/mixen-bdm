@@ -1,0 +1,714 @@
+@import url('https://fonts.googleapis.com/css?family=Sarabun:100,300,800');
+
+a {
+	text-decoration: none;
+	display        : inline-block;
+	transition     : all 0.3s ease-out;
+}
+
+button {
+	background-color: transparent;
+	border          : none;
+	cursor          : pointer;
+}
+
+img {
+	display: block;
+}
+
+* {
+	font-family: 'Sarabun', sans-serif;
+	margin     : 0px;
+	padding    : 0px;
+	box-sizing : border-box;
+	outline    : none;
+}
+
+body {
+	background-color: white;
+}
+
+	body > nav {
+		width           : 100%;
+		height          : 120px;
+		background-color: white;
+		display         : flex;
+		flex-flow       : row wrap;
+		justify-content : space-between;
+		align-items     : center;
+		padding         : 0px 120px;
+		position        : fixed;
+		top             : 0px;
+		left            : 0px;
+		z-index         : 100;
+		transition      : all 0.3s ease-out;
+	}
+
+	body > .nav-white {
+		background-color: white;
+	}
+
+		body > nav > a {
+			height: 100px;
+		}
+
+			body > nav > a > img {
+				height: 100%;
+			}
+
+		body > nav > ul {
+			list-style     : none;
+			display        : flex;
+			justify-content: center;
+			align-items    : center;
+		}
+
+			body > nav > ul > li {
+				margin-right: 20px;
+			}
+
+			body > nav > ul > li:last-of-type {
+				margin-right: 0px;
+			}
+
+				body > nav > ul > li > a {
+					font-weight   : 300;
+					color         : black;
+					text-transform: uppercase;
+				}
+
+				body > nav > ul > li > a:hover {
+					color: #071555;
+				}
+
+				body > nav > ul > li:last-of-type > a {
+					background-color: #071555;
+					color           : white;
+					padding         : 10px 20px;
+				}
+
+				body > nav > ul > li:last-of-type > a:hover {
+					background-color: black;
+				}
+
+	body > header {
+		width          : 100%;
+		height         : 100vh;
+		display        : flex;
+		align-items    : center;
+		justify-content: space-between;
+		padding        : 0px 120px;
+		color          : white;
+		position       : relative;
+	}
+
+		body > header > h1 {
+			text-transform: uppercase;
+			display       : inline-block;
+			white-space   : pre-line;
+			font-size     : 2.5em;
+			font-weight   : 100;
+		}
+
+			body > header > h1 > strong {
+				font-weight: 700;
+			}
+
+		body > header > a {
+			color    : white;
+			font-size: 5em;
+		}
+
+		body > header > span {
+			display : block;
+			position: absolute;
+			bottom  : 80px;
+			right   : 120px;
+		}
+
+			body > header > span > a {
+				color: white;
+			}
+
+	#nosotros {
+		width                  : 100%;
+		padding                : 80px 120px;
+		position               : relative;
+		background-image       : url('../imagenes/nosotros/fondos.jpg');
+		-webkit-background-size: 45% 100%;
+		background-size        : 45% 100%;
+		background-position    : right;
+		background-repeat      : no-repeat;
+	}
+
+		#nosotros > h1 {
+			background-color: #071555;
+			position        : absolute;
+			height          : 100%;
+			width           : 40px;
+			left            : 120px;
+			top             : 0px;
+			color           : white;
+			text-transform  : uppercase;
+		}
+
+			#nosotros > h1 > span {
+				width      : 40px;
+				display    : inline-block;
+				transform  : rotate(-90deg);
+				position   : absolute;
+				top        : 210px;
+				left       : 10px;
+				font-weight: 800;
+			}
+
+		#nosotros > div {
+			width          : 100%;
+			display        : flex;
+			flex-flow      : row wrap;
+			justify-content: space-between;
+			align-items    : center;
+		}
+
+			#nosotros > div > div {
+				width: calc(50% - 20px);
+			}
+
+			#nosotros > div > div:first-of-type {
+				padding-left: 80px;
+			}
+
+				#nosotros > div > div > img {
+					width: 100%;
+				}
+
+				#nosotros > div > div > h2 {
+					margin-bottom: 40px;
+					font-weight  : 100;
+					color        : #071555;
+					display      : block;
+					width        : 100%;
+					text-align   : right;
+					white-space  : pre-line;
+					font-size    : 2em;
+				}
+
+					#nosotros > div > div > h2 > strong {
+						font-weight: 800;
+					}
+
+				#nosotros > div > div > p {
+					margin-bottom: 20px;
+					text-align   : justify;
+				}
+
+				#nosotros > div > div > p:last-of-type {
+					margin-bottom: 0px;
+				}
+
+	#empresas {
+		width          : 100%;
+		padding        : 40px 120px;
+		display        : flex;
+		flex-flow      : row wrap;
+		justify-content: space-between;
+		align-items    : center;
+	}
+
+		#empresas > div {
+			width: calc(16.66666666666667% - 40px);
+		}
+
+			#empresas > div > img {
+				width: 100%;
+			}
+
+	#proyectos {
+		width          : 100%;
+		padding        : 80px 120px;
+		display        : flex;
+		align-items    : center;
+		justify-content: center;
+		flex-direction : column;
+	}
+
+		#proyectos > h1 {
+			color         : #071555;
+			font-size     : 2em;
+			font-weight   : 100;
+			text-transform: uppercase;
+		}
+
+		#proyectos > sub {
+			color         : #071555;
+			font-size     : 1em;
+			font-weight   : 300;
+			padding-bottom: 20px;
+			margin-bottom : 40px;
+			border-bottom : 1px solid #071555;
+		}
+
+		#proyectos > div {
+			width          : 100%;
+			display        : flex;
+			flex-flow      : row wrap;
+			justify-content: space-between;
+			margin-bottom  : 40px;
+		}
+
+			#proyectos > div > article {
+				width          : calc(50% - 20px);
+				margin-bottom  : 40px;
+				display        : flex;
+				flex-flow      : row wrap;
+				justify-content: space-between;
+				align-items    : center;
+			}
+
+				#proyectos > div > article > img {
+					width: calc(30% - 10px);
+				}
+
+				#proyectos > div > article > div {
+					width: calc(70% - 10px);
+				}
+
+					#proyectos > div > article > div > h1 {
+						font-size     : 1.5em;
+						font-weight   : 300;
+						text-transform: uppercase;
+						color         : #071555;
+					}
+
+					#proyectos > div > article > div > sub {
+						display      : block;
+						font-size    : 1em;
+						font-weight  : 300;
+						color        : #071555;
+						margin-bottom: 20px;
+					}
+
+					#proyectos > div > article > div > p {
+						text-align   : justify;
+						margin-bottom: 20px;
+					}
+
+					#proyectos > div > article > div > a {
+						padding         : 10px 20px;
+						background-color: #071555;
+						color           : white;
+						font-weight     : 300;
+					}
+
+					#proyectos > div > article > div > a:hover {
+						background-color: black;
+					}
+
+			#proyectos > div > article:nth-of-type(n+3) {
+				margin-bottom: 0px;
+			}
+
+		#proyectos > a {
+			padding         : 10px 20px;
+			background-color: #071555;
+			color           : white;
+			font-weight     : 300;
+			text-transform  : uppercase;
+		}
+
+		#proyectos > a:hover {
+			background-color: black;
+		}
+
+	#certificaciones {
+		width   : 100%;
+		padding : 80px 120px;
+		position: relative;
+	}
+
+		#certificaciones > h1 {
+			background-color: #071555;
+			position        : absolute;
+			height          : 100%;
+			width           : 40px;
+			left            : 120px;
+			top             : 0px;
+			color           : white;
+			text-transform  : uppercase;
+		}
+
+			#certificaciones > h1 > span {
+				width      : 40px;
+				display    : inline-block;
+				transform  : rotate(-90deg);
+				position   : absolute;
+				top        : 240px;
+				left       : 10px;
+				font-weight: 800;
+			}
+
+		#certificaciones > div {
+			width          : 100%;
+			padding        : 0px 80px;
+			display        : flex;
+			flex-flow      : row wrap;
+			justify-content: space-between;
+		}
+
+			#certificaciones > div > figure {
+				width          : calc(33.33333333333333% - 40px);
+				display        : flex;
+				align-items    : center;
+				justify-content: center;
+				flex-direction : column;
+			}
+
+				#certificaciones > div > figure > div {
+					width           : 200px;
+					height          : 200px;
+					border-radius   : 50%;
+					background-color: #071555;
+					display         : flex;
+					align-items     : center;
+					justify-content : center;
+					margin-bottom   : 20px;
+				}
+
+					#certificaciones > div > figure > div > img {
+						width: 35%;
+					}
+
+				#certificaciones > div > figure > figcaption {
+					text-align: center;
+				}
+
+	body > map {
+		display: block;
+		width  : 100%;
+		height : 350px;
+	}
+
+services {
+	display   : block;
+	width     : 100%;
+	margin-top: 120px;
+}
+
+	services > header {
+		width           : 100%;
+		background-color: white;
+	}
+
+		services > header > div {
+			width: 100%;
+		}
+
+		services > header > div:first-of-type {
+			display        : flex;
+			flex-flow      : row wrap;
+			justify-content: space-between;
+		}
+
+			services > header > div:first-of-type > figure {
+				width: calc(33.3333% - 5px);
+			}
+
+				services > header > div:first-of-type > figure > img {
+					width: 100%;
+				}
+
+		services > header > div:last-of-type {
+			padding        : 120px;
+			display        : flex;
+			flex-flow      : row wrap;
+			justify-content: space-between;
+			align-items    : center;
+		}
+
+			services > header > div:last-of-type > div {
+				width: calc(50% - 20px);
+			}
+
+				services > header > div:last-of-type > div > h1 {
+					white-space   : pre-line;
+					font-weight   : 100;
+					color         : #071555;
+					margin-bottom : 40px;
+					text-transform: uppercase;
+				}
+
+					services > header > div:last-of-type > div > h1 > strong {
+						font-weight: 800;
+						font-size  : 1.25em;
+					}
+
+				services > header > div:last-of-type > div > ul {
+					margin-bottom: 40px;
+				}
+
+					services > header > div:last-of-type > div > ul > li {
+						display      : block;
+						margin-bottom: 10px;
+					}
+
+					services > header > div:last-of-type > div > ul > li:last-of-type {
+						margin-bottom: 0px;
+					}
+
+				services > header > div:last-of-type > div > p {
+					text-align   : justify;
+					margin-bottom: 10px;
+					color        : black;
+				}
+
+				services > header > div:last-of-type > div > p:last-of-type {
+					margin-bottom: 0px;
+				}
+
+				services > header > div:last-of-type > div > img {
+					width: 100%;
+				}
+
+	#servicios {
+		width           : 100%;
+		color           : white;
+		padding         : 120px;
+		display         : flex;
+		align-items     : center;
+		justify-content : center;
+		flex-direction  : column;
+	}
+
+		#servicios > h1 {
+			display       : inline-block;
+			border-bottom : 1px solid white;
+			margin-bottom : 40px;
+			padding-bottom: 10px;
+			font-size     : 2em;
+			font-weight   : 100;
+			text-transform: uppercase;
+		}
+
+		#servicios > div {
+			width          : 100%;
+			display        : flex;
+			flex-flow      : row wrap;
+			justify-content: space-between;
+		}
+
+		#servicios > .triple {
+			width: 75%;
+		}
+
+			#servicios > div > a {
+				display        : flex;
+				align-items    : center;
+				justify-content: center;
+				flex-direction : column;
+				width          : calc(25% - 20px);
+				position       : relative;
+			}
+
+			#servicios > .triple > a {
+				width: calc(33.33333333333333% - 20px);
+			}
+
+				#servicios > div > a > img {
+					width: 100%;
+				}
+
+				#servicios > div > a > span {
+					display         : block;
+					width           : 100%;
+					text-transform  : uppercase;
+					padding         : 10px 0px;
+					text-align      : center;
+					color           : white;
+					background-color: #071555;
+				}
+
+				#servicios > div > a > i {
+					position : absolute;
+					font-size: 20px;
+					bottom   : -15px;
+					color    : white;
+				}
+
+	break {
+		display        : flex;
+		flex-flow      : row wrap;
+		justify-content: space-between;
+		align-items    : center;
+		width          : 100%;
+		padding        : 120px 0px;
+	}
+
+		break > div {
+			width  : 50%;
+			padding: 0px 40px;
+		}
+
+		break > div:first-of-type {
+			border-right: 1px solid white;
+		}
+
+			break > div > h3 {
+				color         : white;
+				padding       : 20px 0px;
+				text-align    : right;
+				white-space   : pre-line;
+				font-weight   : 100;
+				text-transform: uppercase;
+				font-size     : 3em;
+			}
+
+				break > div > h3 > strong {
+					font-weight: 800;
+				}
+
+			break > div > a {
+				padding         : 10px 40px;
+				background-color: white;
+				color           : #071555;
+				font-weight     : 300;
+				text-transform  : uppercase;
+			}
+
+			break > div > a:hover {
+				color           : white;
+				background-color: black;
+			}
+
+	#contacto {
+		width           : 100%;
+		padding         : 120px;
+		background-color: #1b1b1b;
+		display         : flex;
+		align-items     : center;
+		justify-content : center;
+		flex-direction  : column;
+	}
+
+		#contacto > h1 {
+			display       : inline-block;
+			font-weight   : 100;
+			font-size     : 2.5em;
+			color         : white;
+			margin-bottom : 40px;
+			border-bottom : 1px solid white;
+			padding-bottom: 10px;
+			text-transform: uppercase;
+		}
+
+		#contacto > div {
+			width          : 100%;
+			display        : flex;
+			flex-flow      : row wrap;
+			justify-content: space-between;
+		}
+
+			#contacto > div > ul {
+				width     : calc(33.3333% - 10px);
+				list-style: none;
+			}
+
+				#contacto > div > ul > li {
+					display      : block;
+					margin-bottom: 20px;
+					color        : white;
+					font-weight  : 100;
+				}
+
+				#contacto > div > ul > li:last-of-type {
+					margin-bottom: 0px;
+				}
+
+					#contacto > div > ul > li > strong {
+						display    : block;
+						font-weight: 300;
+						color      : #e4dd19;
+					}
+
+					#contacto > div > ul > li > span {
+						display: block;
+					}
+
+					#contacto > div > ul > li > a {
+						color      : white;
+						font-weight: 300;
+					}
+
+					#contacto > div > ul > li > a:hover {
+						color: #e4dd19;
+					}
+
+			#contacto > div > form {
+				width          : calc(66.6666% - 10px);
+				display        : flex;
+				flex-flow      : row wrap;
+				justify-content: space-between;
+			}
+
+				#contacto > div > form > div {
+					width        : 100%;
+					margin-bottom: 10px;
+				}
+
+				#contacto > div > form > div:last-of-type {
+					margin-bottom: 0px;
+				}
+
+				#contacto > div > form > div:nth-of-type(-n+4) {
+					width: calc(50% - 5px);
+				}
+
+					#contacto > div > form > div > input,
+					#contacto > div > form > div > textarea {
+						width           : 100%;
+						background-color: transparent;
+						border          : 1px solid #545454;
+						padding         : 10px;
+						color           : white;
+						font-weight     : 300;
+					}
+
+					#contacto > div > form > div > input::placeholder,
+					#contacto > div > form > div > textarea::placeholder {
+						font-weight: 300;
+						color      : #545454;
+					}
+
+					#contacto > div > form > div > button {
+						display         : block;
+						width           : 100%;
+						padding         : 10px;
+						text-align      : center;
+						background-color: white;
+						color           : #545454;
+						transition      : all 0.3s ease-out;
+						font-weight     : 800;
+					}
+
+					#contacto > div > form > div > button:hover {
+						background-color: black;
+						color           : white;
+					}
+
+	body > footer {
+		width: 100%;
+	}
+
+		body > footer > img {
+			width  : 150px;
+			padding: 80px 0px;
+			margin : auto;
+		}
+
+		body > footer > div {
+			width           : 100%;
+			padding         : 20px;
+			font-weight     : 300;
+			color           : black;
+			text-align      : center;
+			background-color: #d2d2d2;
+		}
