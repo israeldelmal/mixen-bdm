@@ -132,17 +132,17 @@
 				<div>
 					<img src="assets/imagenes/certificaciones/figura-2.png" alt="#">
 				</div>
-				<figcaption>En la división / área 
-				<strong>BIM la empresa cuenta con 
+				<figcaption>En el área BIM
+				<strong>la empresa cuenta con
 				5 años de experiencia.</strong></figcaption>
 			</figure>
 			<figure>
 				<div>
 					<img src="assets/imagenes/certificaciones/figura-3.png" alt="#">
 				</div>
-				<figcaption>BDM cuenta con perito 
-				<strong>certificado ante el gobierno</strong> del 
-				estado de Chihuahua.</figcaption>
+				<figcaption>BDM cuenta con perito
+				<strong>estructural ante el gobierno
+				del estado de Chihuahua.</strong></figcaption>
 			</figure>
 		</div>
 	</section>
