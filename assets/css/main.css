@@ -31,7 +31,7 @@ body {
 	body > nav {
 		width           : 100%;
 		height          : 120px;
-		background-color: white;
+		background-color: rgba(255, 255, 255, 0.5);
 		display         : flex;
 		flex-flow       : row wrap;
 		justify-content : space-between;
@@ -46,6 +46,11 @@ body {
 
 	body > .nav-white {
 		background-color: white;
+		box-shadow: 0 0 1px rgba(0, 0, 0, 0.25);
+	}
+
+	body > .nav-active {
+		margin-top: 0px;
 	}
 
 		body > nav > a {
@@ -90,6 +95,31 @@ body {
 				body > nav > ul > li:last-of-type > a:hover {
 					background-color: black;
 				}
+
+	body > nav-responsive {
+		display         : none;
+		align-items     : center;
+		justify-content : flex-start;
+		background-color: white;
+		width           : 100%;
+		height          : 60px;
+		position        : fixed;
+		top             : 0px;
+		left            : 0px;
+		z-index         : 90;
+		padding         : 0px 20px;
+		box-shadow      : 0 0 1px rgba(0, 0, 0, 0.25);
+	}
+
+		body > nav-responsive > a {
+			display: inline-block;
+			height : 50px;
+		}
+
+			body > nav-responsive > a > img {
+				height: 100%;
+				width : auto;
+			}
 
 	body > header {
 		width          : 100%;
@@ -214,6 +244,17 @@ body {
 		justify-content: space-between;
 		align-items    : center;
 	}
+
+		#empresas > h3 {
+			display       : block;
+			width         : 100%;
+			text-align    : center;
+			font-size     : 2em;
+			font-weight   : 100;
+			text-transform: uppercase;
+			color         : #071555;
+			margin-bottom : 20px;
+		}
 
 		#empresas > div {
 			width: calc(16.66666666666667% - 40px);
@@ -880,3 +921,705 @@ body {
 			text-align      : center;
 			background-color: #d2d2d2;
 		}
+
+	body > button {
+		display         : none;
+		width           : 40px;
+		height          : 40px;
+		background-color: white;
+		position        : fixed;
+		top             : 40px;
+		left            : 40px;
+		box-shadow      : 0 0 1px rgba(0, 0, 0, 0.5);
+		padding         : 5px;
+		transition      : all 0.3s ease-out;
+		z-index         : 120;
+	}
+
+		body > button > span {
+			display         : block;
+			width           : 100%;
+			height          : 1px;
+			background-color: #071555;
+			margin-bottom   : 4px;
+			transition      : all 0.3s ease-out;
+		}
+
+		body > button > span:last-of-type {
+			margin-bottom: 0px;
+		}
+
+	body > .button-active {
+		display        : flex !important;
+		align-items    : center;
+		justify-content: center;
+		border-radius  : 50%;
+	}
+
+		body > .button-active > span {
+			width   : 50%;
+			position: absolute;
+		}
+
+		body > .button-active > span:first-of-type {
+			transform: rotate(45deg);
+		}
+
+		body > .button-active > span:nth-of-type(2) {
+			opacity: 0;
+		}
+
+		body > .button-active > span:last-of-type {
+			transform: rotate(-45deg);
+		}
+
+@media all and (orientation: landscape) and (max-width: 1370px) {
+	body > button {
+		display: block;
+	}
+
+	body > nav {
+		height          : 100vh;
+		background-color: white;
+		flex-flow       : row nowrap;
+		align-items     : center;
+		justify-content : center;
+		flex-direction  : column;
+		transition      : all 0.3s ease-out;
+		margin-top      : -100vh;
+	}
+
+		body > nav > a {
+			margin-bottom: 40px;
+		}
+
+		body > nav > ul {
+			flex-direction: column;
+		}
+
+			body > nav > ul > li {
+				margin-right : 0px;
+				margin-bottom: 15px;
+			}
+
+			body > nav > ul > li:last-of-type {
+				margin-bottom: 0px;
+			}
+
+	service {
+		margin-top: 0px;
+	}
+
+	project {
+		margin-top: 0px;
+	}
+}
+
+@media all and (orientation: landscape) and (max-width: 1030px) {
+	body > button {
+		top : 20px;
+		left: 20px;
+	}
+
+	body > header {
+		padding: 0px 80px;
+	}
+
+	#nosotros {
+		padding: 80px;
+	}
+
+		#nosotros > h1 {
+			left: 80px;
+		}
+
+			#nosotros > div > div > h2 {
+				white-space: normal;
+				font-size  : 1.5em;
+			}
+
+	#servicios {
+		padding: 80px;
+	}
+
+	#empresas {
+		padding: 40px 80px;
+	}
+
+		#empresas > h3 {
+			font-size: 1.5em;
+		}
+
+	break > div > h3 {
+		font-size: 1.5em;
+	}
+
+	#proyectos {
+		padding: 80px;
+	}
+
+		#proyectos > h1 {
+			font-size: 1.5em;
+		}
+
+	#certificaciones {
+		padding: 80px;
+	}
+
+		#certificaciones > h1 {
+			left: 80px;
+		}
+
+		#certificaciones > div {
+			align-items: flex-start;
+		}
+
+			#certificaciones > div > figure > div {
+				width: 150px;
+				height: 150px;
+			}
+
+	#contacto {
+		padding: 80px;
+	}
+
+		#contacto > h1 {
+			font-size: 1.5em;
+		}
+
+	service {
+		margin-top: 0px;
+	}
+
+		service > service-header > div:last-of-type {
+			padding: 80px;
+		}
+
+			service > service-header > div:last-of-type > div > h1 {
+				font-size  : 1.5em;
+				white-space: normal;
+			}
+
+	project > project-header {
+		padding: 80px;
+	}
+
+	project > section {
+		padding: 80px;
+	}
+
+	project > projects {
+		padding: 80px;
+	}
+
+		project > projects > div > article > img {
+			width        : 100%;
+			margin-bottom: 20px;
+		}
+
+		project > projects > div > article > div {
+			width: 100%;
+		}
+
+	break > .single {
+		padding: 0px 80px;
+	}
+}
+
+@media all and (orientation: landscape) and (max-width: 740px) {
+	body > nav > a {
+		margin-bottom: 20px;
+	}
+
+	body > header {
+		padding: 0px 20px;
+	}
+
+		body > header > h1 {
+			font-size: 1.5em;
+		}
+
+		body > header > a {
+			font-size: 2.5em;
+		}
+
+	#nosotros {
+		background-image: none;
+		padding: 40px 20px;
+	}
+
+		#nosotros > h1 {
+			left: 20px;
+		}
+
+		#nosotros > div > div:first-of-type {
+			width: 100%;
+		}
+
+		#nosotros > div > div:last-of-type {
+			display: none;
+		}
+
+	#servicios {
+		padding: 40px 20px;
+	}
+
+		#servicios > div > a {
+			width: calc(50% - 20px);
+		}
+
+		#servicios > div > a:nth-of-type(n+3) {
+			margin-top: 40px;
+		}
+
+	#empresas {
+		padding: 40px 20px;
+	}
+
+	#proyectos {
+		padding: 40px 20px;
+	}
+
+		#proyectos > div > article {
+			width: 100%;
+		}
+
+		#proyectos > div > article:nth-of-type(n+3) {
+			margin-bottom: 40px;
+		}
+
+		#proyectos > div > article:last-of-type {
+			margin-bottom: 0px;
+		}
+
+	#certificaciones > h1 {
+		left: 20px;
+	}
+
+		#certificaciones > div > figure {
+			width        : 100%;
+			margin-bottom: 20px;
+		}
+
+		#certificaciones > div > figure:last-of-type {
+			margin-bottom: 0px;
+		}
+
+	#contacto {
+		padding: 40px 20px;
+	}
+
+		#contacto > div > ul {
+			width        : 100%;
+			margin-bottom: 20px;
+		}
+
+		#contacto > div > form {
+			width: 100%;
+		}
+
+	body > map {
+		height: 200px;
+	}
+
+	service > service-header > div:last-of-type > div:first-of-type {
+		width: 100%;
+	}
+
+	service > service-header > div:last-of-type > div:last-of-type {
+		display: none;
+	}
+
+	project > projects > h2 {
+		font-size: 1.5em;
+		text-align: center;
+	}
+
+	project > projects > div > article {
+		width        : 100%;
+		margin-bottom: 40px;
+	}
+
+	project > projects > div > article:last-of-type {
+		margin-bottom: 0px;
+	}
+
+		project > projects > div > article > img {
+			width: calc(30% - 20px);
+		}
+
+		project > projects > div > article > div {
+			width: calc(70% - 20px);
+		}
+
+	break > .single > h3 {
+		font-size: 1.5em;
+	}
+}
+
+@media all and (orientation: portrait) and (max-width: 1030px) {
+	body > button {
+		display: block;
+	}
+
+	body > nav {
+		height          : 100vh;
+		background-color: white;
+		flex-flow       : row nowrap;
+		align-items     : center;
+		justify-content : center;
+		flex-direction  : column;
+		transition      : all 0.3s ease-out;
+		margin-top      : -100vh;
+	}
+
+		body > nav > a {
+			margin-bottom: 40px;
+		}
+
+		body > nav > ul {
+			flex-direction: column;
+		}
+
+			body > nav > ul > li {
+				margin-right : 0px;
+				margin-bottom: 15px;
+			}
+
+			body > nav > ul > li:last-of-type {
+				margin-bottom: 0px;
+			}
+
+	#nosotros > div > div > h2 {
+		white-space: normal;
+	}
+
+	#certificaciones > div {
+		align-items: flex-start;
+	}
+
+		#certificaciones > div > figure > div {
+			width : 150px;
+			height: 150px;
+		}
+
+	service {
+		margin-top: 0px;
+	}
+
+	project {
+		margin-top: 0px;
+	}
+
+		project > projects > div > article > img {
+			width        : 100%;
+			margin-bottom: 20px;
+		}
+
+		project > projects > div > article > div {
+			width: 100%;
+		}
+}
+
+@media all and (orientation: portrait) and (max-width: 770px) {
+	body > button {
+		top : 20px;
+		left: 20px;
+	}
+
+	body > header {
+		padding: 0px 80px;
+	}
+
+	#nosotros {
+		padding         : 80px;
+		background-image: none;
+	}
+
+		#nosotros > h1 {
+			left: 80px;
+		}
+
+			#nosotros > div > div:first-of-type {
+				width: 100%;
+			}
+
+			#nosotros > div > div:last-of-type {
+				display: none;
+			}
+
+	#servicios {
+		padding: 80px;
+	}
+
+	#empresas {
+		padding: 40px 80px;
+	}
+
+	break > div > h3 {
+		font-size: 2em;
+	}
+
+	#proyectos {
+		padding: 80px;
+	}
+
+		#proyectos > div > article {
+			width: 100%;
+		}
+
+		#proyectos > div > article:last-of-type {
+			margin-top: 40px;
+		}
+
+	#certificaciones {
+		padding: 80px;
+	}
+
+		#certificaciones > h1 {
+			left: 80px;
+		}
+
+			#certificaciones > div {
+				flex-flow      : row nowrap;
+				justify-content: center;
+				align-items    : center;
+				flex-direction : column;
+			}
+
+				#certificaciones > div > figure {
+					width        : 100%;
+					margin-bottom: 20px;
+				}
+
+				#certificaciones > div > figur:last-of-type {
+					margin-bottom: 0px;
+				}
+
+					#certificaciones > div > figure > figcaption {
+						display: block;
+						width: 100%;
+					}
+
+	#contacto {
+		padding: 80px;
+	}
+
+	service > service-header > div:last-of-type {
+		padding: 80px;
+	}
+
+		service > service-header > div:last-of-type > div:first-of-type {
+			width: 100%;
+		}
+
+		service > service-header > div:last-of-type > div:last-of-type {
+			display: none;
+		}
+
+	project > project-header {
+		padding: 80px;
+	}
+
+	project > section {
+		padding: 80px;
+	}
+
+	project > projects {
+		padding: 80px;
+	}
+
+	break > .single > h3 {
+		white-space: normal;
+		font-size  : 2em;
+	}
+}
+
+@media all and (orientation: portrait) and (max-width: 420px) {
+	body > nav-responsive {
+		display: flex;
+	}
+
+	body > button {
+		top  : 10px;
+		right: 20px;
+		left : auto;
+	}
+
+	body > header {
+		padding: 0px 20px;
+	}
+
+		body > header > h1 {
+			font-size  : 1.5em;
+			white-space: normal;
+		}
+
+		body > header > a {
+			font-size: 2em;
+		}
+
+	#nosotros {
+		padding: 40px 20px;
+	}
+
+		#nosotros > h1 {
+			left: 20px;
+		}
+
+			#nosotros > div > div > h2 {
+				font-size: 1.25em;
+			}
+
+	#servicios {
+		padding: 40px 20px;
+	}
+
+		#servicios > h1 {
+			font-size: 1.25em;
+		}
+
+			#servicios > div > a {
+				width        : 100%;
+				margin-bottom: 40px;
+			}
+
+			#servicios > div > a:last-of-type {
+				margin-bottom: 0px;
+			}
+
+	#empresas {
+		padding: 40px 20px;
+	}
+
+		#empresas > h3 {
+			font-size: 1.25em;
+		}
+
+		#empresas > div {
+			width        : calc(50% - 10px);
+			margin-bottom: 20px;
+		}
+
+		#empresas > div:nth-of-type(n+5) {
+			margin-bottom: 0px;
+		}
+
+	break {
+		padding: 40px 0px;
+	}
+
+		break > div {
+			padding: 0px 10px;
+		}
+
+			break > div > h3 {
+				font-size: 1.25em;
+			}
+
+			break > div > a {
+				padding: 10px 15px;
+			}
+
+	#proyectos {
+		padding: 40px 20px;
+	}
+
+	#certificacione {
+		padding: 40px 0px;
+	}
+
+		#certificaciones > h1 {
+			left: 20px;
+		}
+
+		#certificaciones > div {
+			padding: 0px;
+		}
+
+	#contacto {
+		padding: 40px 20px;
+	}
+
+		#contacto > h1 {
+			font-size : 1.25em;
+			text-align: center;
+		}
+
+			#contacto > div > ul {
+				width        : 100%;
+				margin-bottom: 20px;
+			}
+
+			#contacto > div > form {
+				width: 100%;
+			}
+
+	body > footer > img {
+		padding: 40px 0px;
+	}
+
+	service {
+		margin-top: 60px;
+	}
+
+		service > service-header > div:last-of-type {
+			padding: 40px 20px;
+		}
+
+			service > service-header > div:last-of-type > div > h1 {
+				font-size: 1.5em;
+			}
+
+	#servicios > .triple > a {
+		width: 100%;
+	}
+
+	project {
+		margin-top: 60px;
+	}
+
+		project > project-header {
+			padding: 80px 20px;
+		}
+
+			project > project-header > h1 {
+				font-size: 1.5em;
+			}
+
+		project > section {
+			padding: 40px 20px;
+		}
+
+		project > projects {
+			padding: 40px 20px;
+		}
+
+			project > projects > h2 {
+				text-align: center;
+				font-size : 1.5em;
+			}
+
+			project > projects > div > article {
+				width        : 100%;
+				margin-bottom: 40px;
+			}
+
+			project > projects > div > article:last-of-type {
+				margin-bottom: 0px;
+			}
+
+				project > projects > div > article > img {
+					width: calc(30% - 10px);
+				}
+
+				project > projects > div > article > div {
+					width: calc(70% - 10px);
+				}
+
+	break > .single > h3 {
+		width    : 100%;
+		padding  : 0px 20px;
+		font-size: 1.5em;
+	}
+}

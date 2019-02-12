@@ -19,10 +19,6 @@
 				<row>
 					<div class="single"><img src="assets/imagenes/proyectos/figura-4.jpg" alt="#"></div>
 				</row>
-				<row>
-					<div class="double"><img src="assets/imagenes/proyectos/figura-1.jpg" alt="#"></div>
-					<div class="double"><img src="assets/imagenes/proyectos/figura-2.jpg" alt="#"></div>
-				</row>
 			</grid>
 		</section>
 		<!-- Más Proyectos -->

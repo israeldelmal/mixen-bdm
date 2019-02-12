@@ -54,6 +54,7 @@
 	</section>
 	<!-- Empresas -->
 	<div id="empresas">
+		<h3>Nuestros <strong>clientes</strong></h3>
 		<div><img src="assets/imagenes/empresas/figura-1.png" alt="#"></div>
 		<div><img src="assets/imagenes/empresas/figura-2.png" alt="#"></div>
 		<div><img src="assets/imagenes/empresas/figura-3.png" alt="#"></div>
